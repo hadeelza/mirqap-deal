@@ -1,0 +1,16 @@
+{
+  "name": "mirqap-deal",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace apps/web",
+    "build:web": "npm run build --workspace apps/web",
+    "preview:web": "npm run preview --workspace apps/web"
+  },
+  "devDependencies": {
+    "supabase": "^2.93.0"
+  }
+}
