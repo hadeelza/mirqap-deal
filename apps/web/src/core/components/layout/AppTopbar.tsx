@@ -20,7 +20,7 @@ export function AppTopbar({ onMenuClick }: AppTopbarProps) {
   const { user, role, signOut } = useAuth()
   const navigate = useNavigate()
 
-  const title = useMemo(() => pageTitleMap[pathname] ?? 'مرقاب ديل', [pathname])
+  const title = useMemo(() => pageTitleMap[pathname] ?? 'صفقة بمرقاب', [pathname])
 
   const handleLogout = async () => {
     await signOut()

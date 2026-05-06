@@ -7,7 +7,7 @@ export default function RegisterPage() {
         <div className="auth-card__side auth-card__side--brand">
           <div>
             <span className="auth-eyebrow">حساب جديد</span>
-            <h2 className="auth-title">أنشئ حسابك وابدأ بناء فرصتك داخل جسر الملاك</h2>
+            <h2 className="auth-title">أنشئ حسابك وابدأ بناء فرصتك داخل صفقة بمرقاب</h2>
             <p className="auth-subtitle">
               اختر دورك أولاً، ثم أكمل بياناتك الأساسية لتنتقل إلى المسار المناسب تلقائياً.
             </p>

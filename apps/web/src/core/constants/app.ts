@@ -1,1 +1,1 @@
-export const APP_NAME = 'جسر الملاك'
+export const APP_NAME = 'صفقة بمرقاب'

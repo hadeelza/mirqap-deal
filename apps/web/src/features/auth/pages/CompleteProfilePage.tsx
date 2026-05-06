@@ -199,7 +199,7 @@ export default function CompleteProfilePage() {
           <span className="complete-profile__eyebrow">الخطوة الأخيرة</span>
           <h1 className="complete-profile__hero-title">إكمال الملف الشخصي</h1>
           <p className="complete-profile__hero-text">
-            أضف بياناتك الأساسية حتى يتم تفعيل الحساب ونقلك تلقائياً إلى المسار المناسب داخل منصة جسر الملاك.
+            أضف بياناتك الأساسية حتى يتم تفعيل الحساب ونقلك تلقائياً إلى المسار المناسب داخل منصة صفقة بمرقاب.
           </p>
         </div>
 

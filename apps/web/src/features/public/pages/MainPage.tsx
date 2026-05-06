@@ -130,7 +130,7 @@ export default function MainPage() {
                   </div>
 
                   <div className="hero-preview-card__brand">
-                    <span>جسر الملاك</span>
+                    <span>صفقة بمرقاب</span>
                     <i />
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function MainPage() {
 
             <div className="main-hero__content">
               <span className="main-hero__eyebrow">رؤية السعودية 2030 · تقنيات مالية متقدمة</span>
-              <h1>جسر الملاك</h1>
+              <h1>صفقة بمرقاب</h1>
               <p>
                 منصة الاستثمار الذكية الأولى في المملكة العربية السعودية، تربط
                 المستثمرين الملائكة برواد الأعمال من خلال تقنيات الذكاء الاصطناعي
@@ -219,7 +219,7 @@ export default function MainPage() {
       <section className="main-trust">
         <div className="container">
           <div className="section-heading section-heading--centered">
-            <h2>أكبر الشركات تثق في جسر الملاك</h2>
+            <h2>أكبر الشركات تثق في صفقة بمرقاب</h2>
           </div>
 
           <div className="main-trust__grid">
@@ -244,7 +244,7 @@ export default function MainPage() {
       <section className="main-how">
         <div className="container">
           <div className="section-heading section-heading--centered">
-            <h2>كيف يعمل "جسر الملاك"؟</h2>
+            <h2>كيف يعمل "صفقة بمرقاب"؟</h2>
             <p>منصة مدعومة بالذكاء الاصطناعي مع توصيات شخصية وتقييمات احترافية للمشاريع</p>
           </div>
 

@@ -62,7 +62,7 @@ export default function InvestorSidebar({
         <Link to={ROUTES.investor.dashboard} className="investor-brand" onClick={onClose}>
           <span className="investor-brand__logo">ج</span>
           <div className="investor-brand__content">
-            <strong>{APP_CONFIG.appNameAr || "جسر الملاك"}</strong>
+            <strong>{APP_CONFIG.appNameAr || "صفقة بمرقاب"}</strong>
             <span>{APP_CONFIG.appTaglineAr || "منصة ذكية لربط المستثمرين برواد الأعمال"}</span>
           </div>
         </Link>

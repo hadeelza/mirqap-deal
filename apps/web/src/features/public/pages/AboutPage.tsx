@@ -4,9 +4,9 @@ export default function AboutPage() {
       <div className="container">
         <div className="section-heading">
           <span className="section-chip">من نحن</span>
-          <h1 className="page-title">عن جسر الملاك</h1>
+          <h1 className="page-title">عن صفقة بمرقاب</h1>
           <p className="page-subtitle">
-            جسر الملاك منصة عربية تهدف إلى ربط المستثمرين برواد الأعمال من خلال عرض
+            صفقة بمرقاب منصة عربية تهدف إلى ربط المستثمرين برواد الأعمال من خلال عرض
             رقمي منظم للمشاريع والفرص.
           </p>
         </div>

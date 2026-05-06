@@ -4,7 +4,7 @@ export default function FeaturesSection() {
         <div className="container">
           <div className="section-heading">
             <span className="section-chip section-chip--soft">مزايا المنصة</span>
-            <h2>لماذا جسر الملاك؟</h2>
+            <h2>لماذا صفقة بمرقاب؟</h2>
             <p>
               المنصة لا تركز فقط على الشكل، بل على ترتيب البيانات وتسهيل الوصول إلى
               الفرص المناسبة.
