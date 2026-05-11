@@ -1485,7 +1485,7 @@
   font-size: 14px;
   outline: none;
   transition: 0.2s ease;
-  font-family: inherit;
+ font-family: "Tajawal", "Cairo", Arial, sans-serif;
 }
 
 .auth-field textarea {
@@ -1845,7 +1845,7 @@
   padding: 14px 16px;
   outline: none;
   transition: 0.2s ease;
-  font-family: inherit;
+ font-family: "Tajawal", "Cairo", Arial, sans-serif;
 }
 
 .complete-profile__field input:focus,
@@ -3500,7 +3500,7 @@
   font-size: 15px;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  font-family: inherit;
+  font-family: "Tajawal", "Cairo", Arial, sans-serif;
 }
 
 .investor-edit-profile-form__field input:focus,
@@ -3740,7 +3740,7 @@
   color: #0f172a;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  font-family: inherit;
+   font-family: "Tajawal", "Cairo", Arial, sans-serif;
 }
 
 .investor-ticket-field input:focus {
@@ -3847,7 +3847,7 @@
   color: #0f172a;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  font-family: inherit;
+  font-family: "Tajawal", "Cairo", Arial, sans-serif;
 }
 
 .investor-explore-search__input-wrap input:focus {
@@ -3918,7 +3918,7 @@
   font-size: 14px;
   color: #0f172a;
   outline: none;
-  font-family: inherit;
+ font-family: "Tajawal", "Cairo", Arial, sans-serif;
 }
 
 .investor-explore-sortbar {
@@ -3969,7 +3969,7 @@
   font-size: 14px;
   color: #0f172a;
   outline: none;
-  font-family: inherit;
+ font-family: "Tajawal", "Cairo", Arial, sans-serif;
 }
 
 .investor-explore-results__grid {
@@ -4928,7 +4928,7 @@
   font-size: 14px;
   color: #0f172a;
   outline: none;
-  font-family: inherit;
+ font-family: "Tajawal", "Cairo", Arial, sans-serif;
 }
 
 .project-simulation-actions {
@@ -9420,7 +9420,7 @@
   font-size: 14px;
   outline: none;
   transition: 0.25s ease;
-  font-family: inherit;
+ font-family: "Tajawal", "Cairo", Arial, sans-serif;
   box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.03);
 }
 

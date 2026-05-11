@@ -24,4 +24,5 @@ button,
 input,
 textarea {
   font: inherit;
+  font-family: "Tajawal", "Cairo", Arial, sans-serif;
 }
