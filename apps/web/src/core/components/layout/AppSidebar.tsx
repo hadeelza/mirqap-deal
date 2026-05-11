@@ -1,9 +1,9 @@
 import { Menu, X } from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom'
-import { APP_NAME } from '@/shared/constants/app'
-import { sidebarItems } from '@/shared/constants/navigation'
-import { useAuth } from '@/shared/hooks/useAuth'
-import { cn } from '@/shared/lib/cn'
+import { APP_NAME } from '../../constants/app'
+import { sidebarItems } from '../../constants/navigation'
+import { useAuth } from '../../hooks/useAuth'
+import { cn } from '../../lib/cn'
 
 type AppSidebarProps = {
   mobileOpen: boolean
@@ -44,7 +44,7 @@ export function AppSidebar({ mobileOpen, onClose }: AppSidebarProps) {
                 key={item.label}
                 to={item.href}
                 onClick={onClose}
-                className={({ isActive }) => cn('sidebar-link', isActive && 'is-active')}
+                className={({ isActive }: { isActive: boolean }) => cn('sidebar-link', isActive && 'is-active')}
               >
                 <Icon size={18} />
                 <span>{item.label}</span>

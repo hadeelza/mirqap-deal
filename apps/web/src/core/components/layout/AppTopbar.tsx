@@ -2,8 +2,8 @@ import { LogOut, Menu } from 'lucide-react'
 import { useMemo } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
-import { Button } from '@/shared/components/ui/Button'
-import { useAuth } from '@/shared/hooks/useAuth'
+import { Button } from '../../components/ui/Button'
+import { useAuth } from '../../hooks/useAuth'
 
 type AppTopbarProps = {
   onMenuClick: () => void

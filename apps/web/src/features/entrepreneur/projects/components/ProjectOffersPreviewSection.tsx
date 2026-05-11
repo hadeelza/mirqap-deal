@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { ProjectOfferPreview } from "./project-details.types";
 
 type ProjectOffersPreviewSectionProps = {
@@ -48,6 +49,9 @@ export default function ProjectOffersPreviewSection({
     <section className="entrepreneur-detail-card">
       <div className="entrepreneur-section-heading">
         <h2>أحدث العروض المستلمة</h2>
+        <Link to="/entrepreneur/offers" className="btn btn--ghost btn--sm">
+          كل العروض
+        </Link>
       </div>
 
       {!offers.length ? (
@@ -66,6 +70,9 @@ export default function ProjectOffersPreviewSection({
               <div className="entrepreneur-offer-preview-card__meta">
                 <span className="status-chip status-chip--soft">{formatStatus(offer.status)}</span>
                 <span>{formatDate(offer.createdAt)}</span>
+                <Link to={`/entrepreneur/offers/${offer.id}`} className="btn btn--ghost btn--sm">
+                  مراجعة
+                </Link>
               </div>
             </article>
           ))}

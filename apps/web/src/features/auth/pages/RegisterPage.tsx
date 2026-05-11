@@ -13,20 +13,7 @@ export default function RegisterPage() {
             </p>
           </div>
 
-          <ul className="auth-points">
-            <li>
-              <span className="auth-points__dot" />
-              تسجيل كرائد أعمال أو مستثمر
-            </li>
-            <li>
-              <span className="auth-points__dot" />
-              حفظ البيانات داخل Supabase Auth وقاعدة البيانات
-            </li>
-            <li>
-              <span className="auth-points__dot" />
-              توجيه تلقائي بعد اكتمال الملف الشخصي
-            </li>
-          </ul>
+   
         </div>
 
         <div className="auth-card__side">

@@ -8,8 +8,16 @@ import CreateProjectPage from "../../features/entrepreneur/projects/pages/Create
 import MyProjectsPage from "../../features/entrepreneur/projects/pages/MyProjectsPage";
 import EntrepreneurProjectDetailsPage from "../../features/entrepreneur/projects/pages/EntrepreneurProjectDetailsPage";
 import EditProjectPage from "../../features/entrepreneur/projects/pages/EditProjectPage";
+import BrowseInvestorsPage from "../../features/entrepreneur/projects/pages/BrowseInvestorsPage";
 import ProjectEvaluationPage from "../../features/entrepreneur/ai/pages/ProjectEvaluationPage";
 import ProjectSimulationPage from "../../features/entrepreneur/ai/pages/ProjectSimulationPage";
+import ReceivedOffersPage from "../../features/entrepreneur/offers/pages/ReceivedOffersPage";
+import OfferReviewPage from "../../features/entrepreneur/offers/pages/OfferReviewPage";
+import EditDealPage from "../../features/entrepreneur/offers/pages/EditDealPage";
+import EntrepreneurChatsPage from "../../features/entrepreneur/messages/pages/EntrepreneurChatsPage";
+import EntrepreneurChatDetailsPage from "../../features/entrepreneur/messages/pages/EntrepreneurChatDetailsPage";
+import EntrepreneurNotificationsPage from "../../features/entrepreneur/notifications/pages/EntrepreneurNotificationsPage";
+import EntrepreneurNotificationDetailsPage from "../../features/entrepreneur/notifications/pages/EntrepreneurNotificationDetailsPage";
 
 export const entrepreneurRoutes: RouteObject[] = [
   {
@@ -58,19 +66,35 @@ export const entrepreneurRoutes: RouteObject[] = [
       },
       {
         path: "browse-investors",
-        element: <div className="page-placeholder">تصفح المستثمرين</div>,
+        element: <BrowseInvestorsPage />,
       },
       {
         path: "offers",
-        element: <div className="page-placeholder">العروض المستلمة</div>,
+        element: <ReceivedOffersPage />,
+      },
+      {
+        path: "offers/:offerId",
+        element: <OfferReviewPage />,
+      },
+      {
+        path: "deals/:dealId/edit",
+        element: <EditDealPage />,
       },
       {
         path: "chats",
-        element: <div className="page-placeholder">المحادثات</div>,
+        element: <EntrepreneurChatsPage />,
+      },
+      {
+        path: "chats/:chatId",
+        element: <EntrepreneurChatDetailsPage />,
       },
       {
         path: "notifications",
-        element: <div className="page-placeholder">الإشعارات</div>,
+        element: <EntrepreneurNotificationsPage />,
+      },
+      {
+        path: "notifications/:notificationId",
+        element: <EntrepreneurNotificationDetailsPage />,
       },
     ],
   },

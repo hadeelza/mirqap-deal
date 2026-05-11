@@ -43,7 +43,7 @@ export default function HeroSection() {
             <div className="landing-preview__stats">
               <div className="landing-preview__stat">
                 <label>المشاريع</label>
-                <strong>من قاعدة البيانات</strong>
+                <strong>متنوعة</strong>
               </div>
               <div className="landing-preview__stat">
                 <label>القطاعات</label>

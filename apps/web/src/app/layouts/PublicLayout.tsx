@@ -13,7 +13,7 @@ export default function PublicLayout() {
       <header className="public-header">
         <div className="container public-header__inner">
           <Link to={ROUTES.public.landing} className="brand">
-            <span className="brand__logo">ج</span>
+            <span className="brand__logo">ص</span>
             <div className="brand__content">
               <strong>{APP_CONFIG.appNameAr}</strong>
               <span>{APP_CONFIG.appTaglineAr}</span>

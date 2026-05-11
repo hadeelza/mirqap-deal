@@ -66,6 +66,9 @@ export default function ProjectHeaderCard({ project }: ProjectHeaderCardProps) {
           <Link to={`/entrepreneur/projects/${project.id}/simulation`} className="btn btn--ghost">
             المحاكاة
           </Link>
+          <Link to={`/entrepreneur/browse-investors?projectId=${project.id}`} className="btn btn--ghost">
+            تصفح المستثمرين
+          </Link>
         </div>
       </div>
 

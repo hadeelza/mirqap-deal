@@ -41,7 +41,7 @@ export const ROUTES = {
       profileEdit: "/entrepreneur/profile/edit",
       projects: "/entrepreneur/projects",
       createProject: "/entrepreneur/projects/create",
-      browseInvestors: "/entrepreneur/investors",
+      browseInvestors: "/entrepreneur/browse-investors",
       offers: "/entrepreneur/offers",
       chats: "/entrepreneur/chats",
       notifications: "/entrepreneur/notifications",

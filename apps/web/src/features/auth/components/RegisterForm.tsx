@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { registerSchema } from "../../../core/schemas/auth.schema";
 import { registerUser } from "../services/auth.service";
 
+type AccountRole = "investor" | "entrepreneur";
+
 export default function RegisterForm() {
   const navigate = useNavigate();
 
@@ -12,7 +14,7 @@ export default function RegisterForm() {
     phone: "",
     password: "",
     confirmPassword: "",
-    role: "entrepreneur" as "investor" | "entrepreneur",
+    role: "entrepreneur" as AccountRole,
   });
 
   const [errorMessage, setErrorMessage] = useState("");
@@ -57,6 +59,13 @@ export default function RegisterForm() {
     }
   }
 
+  function selectRole(role: AccountRole) {
+    setForm((prev) => ({
+      ...prev,
+      role,
+    }));
+  }
+
   return (
     <form onSubmit={handleSubmit} className="auth-form">
       <div className="form-field">
@@ -91,18 +100,54 @@ export default function RegisterForm() {
 
       <div className="form-field">
         <label>نوع الحساب</label>
-        <select
-          value={form.role}
-          onChange={(event) =>
-            setForm((prev) => ({
-              ...prev,
-              role: event.target.value as "investor" | "entrepreneur",
-            }))
-          }
-        >
-          <option value="entrepreneur">رائد أعمال</option>
-          <option value="investor">مستثمر</option>
-        </select>
+
+        <div className="auth-role-picker">
+          <button
+            type="button"
+            className={
+              form.role === "entrepreneur"
+                ? "auth-role-card auth-role-card--active"
+                : "auth-role-card"
+            }
+            onClick={() => selectRole("entrepreneur")}
+            aria-pressed={form.role === "entrepreneur"}
+          >
+            <div className="auth-role-card__top">
+              <div className="auth-role-card__icon">ر</div>
+              <div className="auth-role-card__check" />
+            </div>
+
+            <div className="auth-role-card__content">
+              <h3>رائد أعمال</h3>
+              <p>
+                أنشئ مشروعك، ارفع ملفاتك، اعرض التقييم الذكي، واستقبل العروض الاستثمارية.
+              </p>
+            </div>
+          </button>
+
+          <button
+            type="button"
+            className={
+              form.role === "investor"
+                ? "auth-role-card auth-role-card--active"
+                : "auth-role-card"
+            }
+            onClick={() => selectRole("investor")}
+            aria-pressed={form.role === "investor"}
+          >
+            <div className="auth-role-card__top">
+              <div className="auth-role-card__icon">م</div>
+              <div className="auth-role-card__check" />
+            </div>
+
+            <div className="auth-role-card__content">
+              <h3>مستثمر</h3>
+              <p>
+                استكشف المشاريع، شاهد التحليلات الذكية، حدّد اهتماماتك، وقدّم عروضك بسهولة.
+              </p>
+            </div>
+          </button>
+        </div>
       </div>
 
       <div className="form-field">
